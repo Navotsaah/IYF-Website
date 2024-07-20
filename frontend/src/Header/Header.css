@@ -16,9 +16,7 @@
 .img_header img {
     width: 100%;
     filter: brightness(70%);
-    /* Adjust brightness to make the image lighter */
     object-fit: cover;
-    /* Ensure the image covers the entire container */
 }
 
 .header_content {
