@@ -1,0 +1,46 @@
+.header {
+    position: relative;
+    /* Ensure the header container is relative for absolute positioning */
+}
+
+.img_header {
+    position: relative;
+    /* Position relative to contain absolutely positioned elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Hide any overflow from the image */
+}
+
+.img_header img {
+    width: 100%;
+    filter: brightness(70%);
+    /* Adjust brightness to make the image lighter */
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
+}
+
+.header_content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header_content h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.header_content p {
+    margin: 10px 0 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
