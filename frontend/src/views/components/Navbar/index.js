@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import iskon_img from '../../../assets/images/logo_iyf.png';
+import iskon_img from '../../../assets/images/navotsah.png';
 import Hamburger from 'hamburger-react';
 import '../../../assets/css/navbar.css';
 

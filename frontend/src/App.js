@@ -3,6 +3,7 @@ import Navbar from './views/components/Navbar';
 import Header from './views/pages/Main';
 import Footer from './views/components/Footer';
 import Carousel from './views/pages/Carousel';
+import Mentor from './views/pages/Mentor';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Header />
       <Carousel />
+      <Mentor />
       <Footer />
     </div>
   );
