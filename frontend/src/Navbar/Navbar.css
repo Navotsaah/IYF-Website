@@ -1,0 +1,96 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.iyf_logo {
+    width: 60px;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#join {
+    border: 1px solid #404040;
+    padding: 5px 10px;
+}
+
+#donation_li {
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#donate {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    position: relative;
+    font-weight: 600;
+}
+
+select:after {
+    content: '\25BC';
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 10px;
+    pointer-events: none;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar img {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
