@@ -9,9 +9,12 @@ function Header() {
                 <img src={seminar} alt="" />
             </div>
             <div className="header_content">
-            <h1>Empowering youth to find their path</h1>
-            <p>Discover your passion overcome doubts and achieved success with our personalised guidance.</p>
-            <button>Start</button>
+                <div className='header_heading'>Empowering youth to find their path</div>
+                <p className='header_subheading'>Discover your passion overcome doubts and achieved success with our personalised guidance.</p>
+                <div className="header_btn">
+                    <button className="header_start">Start</button>
+                    <button className="header_learn">Learn more</button>
+                </div>
             </div>
         </div>
     )

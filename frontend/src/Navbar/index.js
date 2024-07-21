@@ -1,11 +1,11 @@
 import React from 'react';
-import iskon_img from '../assets/iskcon_logo.png';
+import iskon_img from '../assets/logo_iyf.png';
 import './Navbar.css';
 
 function Navbar() {
     return (
         <div className='navbar'>
-            <img src={iskon_img} alt="" />
+            <img src={iskon_img} className='iyf_logo' alt="" />
             <nav>
                 <ul>
                     <li><a href="#discover">Discover</a></li>
