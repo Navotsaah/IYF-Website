@@ -1,6 +1,6 @@
 import React from 'react';
-import iskon_img from '../assets/logo_iyf.png';
-import './Navbar.css';
+import iskon_img from '../../../assets/images/logo_iyf.png';
+import '../../../assets/css/navbar.css';
 
 function Navbar() {
     return (

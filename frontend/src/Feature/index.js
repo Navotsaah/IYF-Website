@@ -1,8 +1,8 @@
 import React from 'react';
-import './Feature.css'; // Import the CSS file
-import devotee from '../assets/devotees group 1.png'; // Adjusted the image import path
-import feature2 from '../assets/feature2.png'
-import feature3 from '../assets/feature3.png'
+import '../assets/css/feature.css'; // Import the CSS file
+import devotee from '../assets/images/devotees group 1.png'; // Adjusted the image import path
+import feature2 from '../assets/images/feature2.png'
+import feature3 from '../assets/images/feature3.png'
 
 function Feature() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import seminar from '../assets/seminar2.jpg'
-import './Header.css'
+import seminar from '../../../assets/images/seminar2.jpg'
+import '../../../assets/css/main.css'
 
 function Header() {
     return (
