@@ -4,6 +4,7 @@
     align-items: center;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px !important;
 }
 
 .iyf_logo {
@@ -61,21 +62,33 @@
     font-size: 18px;
 }
 
-#join {
+/* #donation_li:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+} */
+
+.join {
     border: 1px solid #404040;
     padding: 5px 10px;
     border-radius: 5px;
+    margin-right: 50px !important;
 }
 
 #donation_li {
     background-color: black;
     border-radius: 5px;
     padding: 5px 10px;
+    color: white
 }
 
 #donate {
     color: white;
 }
+
+/* #donate:hover {
+    color: black;
+} */
 
 select {
     background-color: transparent;

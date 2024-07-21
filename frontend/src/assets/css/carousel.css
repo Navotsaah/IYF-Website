@@ -1,3 +1,8 @@
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .carousel-image-container {
     height: 300px;
     overflow: hidden;
@@ -11,6 +16,11 @@
 .carousel_container {
     margin-top: 50px;
     margin-bottom: 5%;
+}
+
+.carousel_container h2 {
+    font-size: 30px;
+    font-weight: 700;
 }
 
 @media (max-width: 1000px) {

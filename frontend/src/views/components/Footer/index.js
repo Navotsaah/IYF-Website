@@ -11,11 +11,20 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col md={4} className="text-center footer-section">
-                        <div className="navutsav contact-info">
+                        <div className="footer-main contact-info">
                             <div style={{ textAlign: "center" }}>
-                                <img src={iskon_img} alt="Navutsav" />
+                                <img src={iskon_img} alt="footer-main" />
                             </div>
-                            <p>Navutsav is dedicated to providing exceptional service and creating memorable experiences for all our clients.</p>
+                            <h4 >What we Do ?</h4>
+                            <p>Our Philosphy of life is called Dharma. Wait ! Let us explain? Dharma  doesn’t mean any specific sect or Community, but It actually means the ETERNAL NATURE.</p>
+                            <hr />
+                            <p>For Example - Sugar is Eternally Sweet, Chilli is eternally Hot/Spicy. So that is their Dharma.</p>
+                            <hr />
+                            <p>Similarly We as SPIRITUAL BEINGS have Eternal Nature of being Happy. (Now You Know Why everyone is looking for Happiness. Unfortunately Almost 99% of the times they fall into wrong definition of Happiness.)</p>
+                            <hr />
+                            <p>But We know How to Happy ! By Connecting with God, and Who is he ? How to Connect with him ? That is answered in detail in our courses.</p>
+
+
                         </div>
                     </Col>
                     <Col md={4} className="text-center footer-section">
@@ -23,7 +32,7 @@ const Footer = () => {
                             <h5>Contact Info</h5>
                             <hr />
                             <Row style={{ alignItems: "center" }}> <Col md={1}>
-                                <p><FontAwesomeIcon icon={faMapMarkerAlt} /></p>
+                                <FontAwesomeIcon icon={faMapMarkerAlt} />
                             </Col>
                                 <Col ><p>2221, Sector 38C, Sector 38, Chandigarh, 160038</p>
                                 </Col>
@@ -71,7 +80,7 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-        </footer>
+        </footer >
     );
 };
 

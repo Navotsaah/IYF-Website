@@ -3,10 +3,11 @@
 }
 
 .mentor_heading {
-    font-weight: 700;
-    font-size: 42px;
     margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
 }
+
 
 .mentor-image {
     width: 100%;

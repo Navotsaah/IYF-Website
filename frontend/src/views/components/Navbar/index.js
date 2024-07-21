@@ -3,7 +3,7 @@ import iskon_img from '../../../assets/images/navotsah.png';
 import Hamburger from 'hamburger-react';
 import '../../../assets/css/navbar.css';
 
-function Navbar() {
+function Navbar({ onSectionChange }) {
     const [isOpen, setOpen] = useState(false);
     const navMenuRef = useRef(null);
 
@@ -29,14 +29,16 @@ function Navbar() {
         setOpen(!isOpen); // Toggle the state of isOpen
     };
 
-    const handleLinkClick = () => {
+    const handleLinkClick = (event, section) => {
+        event.preventDefault(); // Prevent the default anchor behavior
         setOpen(false); // Close the menu when a link is clicked
+        onSectionChange(section); // Change the section
     };
 
     return (
         <div className='navbar'>
             <div className='logo-and-hamburger'>
-                <img src={iskon_img} className='iyf_logo' alt="IYF Logo" />
+                <img onClick={(event) => handleLinkClick(event, 'home')} src={iskon_img} className='iyf_logo' alt="IYF Logo" />
 
                 {/* Hamburger icon for mobile */}
                 <div className='hamburger-menu' onClick={handleToggle}>
@@ -47,16 +49,16 @@ function Navbar() {
             {/* Navigation links */}
             <nav ref={navMenuRef} className={isOpen ? 'nav-menu active' : 'nav-menu'}>
                 <ul className='navbar-links'>
-                    <li><a href="#discover" onClick={handleLinkClick}>Discover</a></li>
-                    <li><a href="#event" onClick={handleLinkClick}>Event</a></li>
-                    <li><a href="#resources" onClick={handleLinkClick}>Resources</a></li>
-                    <li><a href="#community" onClick={handleLinkClick}>
-                        <select name="community">
-                            <option value="Community">Community</option>
+                    {/* <li><a href="#discover" onClick={handleLinkClick}>Discover</a></li> */}
+                    {/* <li><a href="#event" onClick={handleLinkClick}>Event</a></li> */}
+                    {/* <li><a href="#resources" onClick={handleLinkClick}>Resources</a></li> */}
+                    {/* <li><a href="#community" onClick={handleLinkClick}> */}
+                    {/* <select name="community"> */}
+                    {/* <option value="Community">Community</option>
                         </select>
-                    </a></li>
-                    <li id='join'><a href="#join" onClick={handleLinkClick}>Join</a></li>
-                    <li id='donation_li'><a href="#donate" id='donate' onClick={handleLinkClick}>Donate</a></li>
+                    </a></li> */}
+                    <li className='join' id='courses'><a href="Courses" onClick={(event) => handleLinkClick(event, 'courses')}>Courses</a></li>
+                    {/* <li id='donation_li'><a href="#donate" id='donate' onClick={handleLinkClick}>Donate</a></li> */}
                 </ul>
             </nav>
         </div>

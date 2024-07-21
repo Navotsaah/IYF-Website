@@ -4,14 +4,27 @@ import Header from './views/pages/Main';
 import Footer from './views/components/Footer';
 import Carousel from './views/pages/Carousel';
 import Mentor from './views/pages/Mentor';
+import { useState } from 'react';
+import Courses from './views/pages/Courses';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('home');
+  const handleSectionChange = (section) => {
+    console.log(section);
+    setActiveSection(section);
+
+  };
   return (
     <div className="App">
-      <Navbar />
-      <Header />
-      <Carousel />
-      <Mentor />
+      <Navbar onSectionChange={handleSectionChange} />
+      {activeSection === 'home' && (
+        <>
+          <Header />
+          <Carousel />
+          <Mentor />
+        </>
+      )}
+      {activeSection === 'courses' && <Courses />}
       <Footer />
     </div>
   );
