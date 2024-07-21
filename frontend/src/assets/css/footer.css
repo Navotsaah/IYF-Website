@@ -1,0 +1,45 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.footer .text-center {
+    text-align: left;
+}
+
+.footer .navutsav img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer .contact-info {
+    text-align: left;
+}
+
+.footer .contact-info h5,
+.footer .map h5 {
+    margin-bottom: 15px;
+}
+
+.footer .contact-info p,
+.footer .map p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+
+
+.footer button {
+    display: none !important;
+}
+
+hr {
+    margin: 0.5rem 0;
+}
