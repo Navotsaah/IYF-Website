@@ -7,7 +7,7 @@
 }
 
 .iyf_logo {
-    width: 8 0px;
+    width: 60px;
 }
 
 nav {
@@ -37,13 +37,13 @@ a {
 
 #join {
     border: 1px solid #404040;
-    padding: 2%;
+    padding: 5px 10px;
 }
 
 #donation_li {
     background-color: black;
     border-radius: 5px;
-    padding: 2%;
+    padding: 5px 10px;
 }
 
 #donate {

@@ -1,12 +1,64 @@
-.feature_class {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10vh;
+/* Feature container */
+.feature {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.feature_heading {
-    font-size: 2em;
-    font-weight: 800;
+/* Feature heading */
+.feature-heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Feature items container */
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Individual feature item */
+.feature-item {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.feature-item .feature-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.feature-item .feature-text {
+    margin-bottom: 20px;
+}
+
+.feature-item .feature-text p {
+    line-height: 1.5;
+}
+
+.feature-item .feature-learn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feature-item .feature-learn:hover {
+    background-color: #0056b3;
 }
