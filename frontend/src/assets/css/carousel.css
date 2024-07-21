@@ -1,0 +1,26 @@
+.carousel-image-container {
+    height: 300px;
+    overflow: hidden;
+}
+
+.carousel-image-container img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel_container {
+    margin-top: 50px;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 1000px) {
+
+    .carousel_text_container {
+        margin-top: 9%;
+    }
+}
+
+.navotsav_p {
+    font-weight: 600;
+    display: inline;
+}

@@ -1,15 +1,15 @@
 import './assets/css/App.css';
 import Navbar from './views/components/Navbar';
 import Header from './views/pages/Main';
-import Feature from './Feature';
 import Footer from './views/components/Footer';
+import Carousel from './views/pages/Carousel';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Header />
-      <Feature />
+      <Carousel />
       <Footer />
     </div>
   );
